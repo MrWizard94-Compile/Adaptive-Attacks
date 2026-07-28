@@ -1,0 +1,60 @@
+{
+  "modName.adaptiveattacks": "Adaptive Attacks",
+
+  "adaptiveattacks.ability.dragon.dragon_overdrive": "Dragon Overdrive",
+  "adaptiveattacks.ability.dragon.dragon_overdrive.desc": "Grants the Ender Dragon a burst of speed and increased damage below 25% health.",
+
+  "adaptiveattacks.ability.dragon.homing_fireball": "Homing Fireball",
+  "adaptiveattacks.ability.dragon.homing_fireball.desc": "Launches a fireball that tracks the nearest player.",
+
+  "adaptiveattacks.ability.dragon.vulnerable_exhaustion": "Vulnerable Exhaustion",
+  "adaptiveattacks.ability.dragon.vulnerable_exhaustion.desc": "Marks the Ender Dragon as vulnerable below 25% health, amplifying incoming damage.",
+
+  "adaptiveattacks.ability.wither.freezing_dark": "Freezing Dark",
+  "adaptiveattacks.ability.wither.freezing_dark.desc": "Passive companion to Nuclear Winter; applies Slowness to nearby players while active.",
+
+  "adaptiveattacks.ability.wither.nuclear_winter": "Nuclear Winter",
+  "adaptiveattacks.ability.wither.nuclear_winter.desc": "The Wither detonates a spreading field of wither skulls that lingers and chills the area.",
+
+  "adaptiveattacks.ability.wither.shatter_wave": "Shatter Wave",
+  "adaptiveattacks.ability.wither.shatter_wave.desc": "Passive companion to Nuclear Winter; sends a knockback shockwave through the area on detonation.",
+
+  "adaptiveattacks.ability.warden.echo_strike": "Echo Strike",
+  "adaptiveattacks.ability.warden.echo_strike.desc": "Passive; deals bonus Sonic Boom damage to players tagged by Echolocation Shockwave.",
+
+  "adaptiveattacks.ability.warden.echolocation_shockwave": "Echolocation Shockwave",
+  "adaptiveattacks.ability.warden.echolocation_shockwave.desc": "Emits a shockwave that tags nearby players, priming them for Echo Strike follow-up hits.",
+
+  "adaptiveattacks.ability.warden.sculk_suffocation": "Sculk Suffocation",
+  "adaptiveattacks.ability.warden.sculk_suffocation.desc": "Encases a player in sculk growth, applying Blindness and Darkness while the Warden kites.",
+
+  "adaptiveattacks.ability.warden.the_silence": "The Silence",
+  "adaptiveattacks.ability.warden.the_silence.desc": "A one-time effect that silences all nearby players, suppressing sound cues for the fight's duration.",
+
+  "adaptiveattacks.ability.generic.rush.gap_closer": "Gap Closer",
+  "adaptiveattacks.ability.generic.rush.gap_closer.desc": "Teleports the boss directly behind the closest player when playing an aggressive archetype.",
+
+  "adaptiveattacks.ability.generic.rush.kinetic_harpoon": "Kinetic Harpoon",
+  "adaptiveattacks.ability.generic.rush.kinetic_harpoon.desc": "Fires a harpoon-like projectile that pulls the hit player toward the boss.",
+
+  "adaptiveattacks.ability.generic.rush.shadow_step": "Shadow Step",
+  "adaptiveattacks.ability.generic.rush.shadow_step.desc": "The boss briefly blinks out of sight before reappearing beside its target.",
+
+  "adaptiveattacks.ability.generic.kite.reactive_spikes": "Reactive Spikes",
+  "adaptiveattacks.ability.generic.kite.reactive_spikes.desc": "Surrounds the boss with a ring of damage spikes for a short duration when a kiting archetype is active.",
+
+  "adaptiveattacks.ability.generic.kite.repulsion_nova": "Repulsion Nova",
+  "adaptiveattacks.ability.generic.kite.repulsion_nova.desc": "Blasts all nearby players away from the boss to maintain kiting distance.",
+
+  "adaptiveattacks.ability.generic.kite.toxic_exhaust": "Toxic Exhaust",
+  "adaptiveattacks.ability.generic.kite.toxic_exhaust.desc": "Leaves a trail of Poison clouds as the boss retreats from melee range.",
+
+  "adaptiveattacks.ability.generic.hybrid.chaos_swap": "Chaos Swap",
+  "adaptiveattacks.ability.generic.hybrid.chaos_swap.desc": "Randomly swaps positions with a nearby player, disorienting the party.",
+
+  "adaptiveattacks.ability.generic.hybrid.dividing_wall": "Dividing Wall",
+  "adaptiveattacks.ability.generic.hybrid.dividing_wall.desc": "Raises a temporary barrier of solid blocks between the boss and its attackers.",
+
+  "adaptiveattacks.ability.generic.hybrid.magnetic_link": "Magnetic Link",
+  "adaptiveattacks.ability.generic.hybrid.magnetic_link.desc": "Tethers two players together, forcing them to stay close or take increasing damage."
+}

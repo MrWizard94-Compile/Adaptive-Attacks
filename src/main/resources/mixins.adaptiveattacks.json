@@ -1,0 +1,8 @@
+{
+  "required": true,
+  "package": "com.adaptiveattacks.mixin",
+  "compatibilityLevel": "JAVA_21",
+  "mixins": [],
+  "server": [],
+  "injectors": { "defaultRequire": 1 }
+}

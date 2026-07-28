@@ -1,0 +1,15 @@
+# Generated Gradle and NeoForge runtime state.
+.gradle/
+build/
+run/
+runs/
+logs/
+
+# Local credentials and editor state.
+.env
+.env.*
+!.env.example
+*.pem
+*.key
+.vscode/
+.idea/
