@@ -1,6 +1,7 @@
 package com.adaptiveattacks.attack.warden;
 
 import com.adaptiveattacks.ability.BossAbility;
+import com.adaptiveattacks.network.SilenceSoundPayload;
 import com.adaptiveboss.adaptation.BossArchetype;
 import java.util.List;
 import java.util.Set;
@@ -11,15 +12,15 @@ import net.minecraft.server.level.ServerPlayer;
 import net.minecraft.world.effect.MobEffectInstance;
 import net.minecraft.world.effect.MobEffects;
 import net.minecraft.world.entity.Mob;
+import net.neoforged.neoforge.network.PacketDistributor;
 import org.jetbrains.annotations.NotNull;
 
 /**
- * Warden ultimate ability: the Warden becomes perfectly still, gains Strength II,
- * and blinds all nearby players for 12 seconds.
+ * Warden ultimate ability: the Warden becomes still, gains Strength II,
+ * blinds / darkens nearby players, and mutes their client audio for the duration.
  *
- * <p>The "silence" effect (muting game audio) is a server-side approximation via
- * Blindness. True audio muting would require a client-side network packet, which
- * is not implemented here.
+ * <p>Audio mute is delivered via {@link SilenceSoundPayload} (client
+ * {@code PlaySoundEvent} filter). Blindness + Darkness remain the server-visible tells.
  */
 public final class TheSilenceAbility implements BossAbility {
 
@@ -60,10 +61,14 @@ public final class TheSilenceAbility implements BossAbility {
         SILENCED_WARDENS.add(boss.getUUID());
         boss.addEffect(
                 new MobEffectInstance(MobEffects.DAMAGE_BOOST, DURATION, 1, false, true));
+        final SilenceSoundPayload payload = new SilenceSoundPayload(DURATION);
         for (final ServerPlayer player : activePlayers) {
             if (boss.distanceTo(player) <= SILENCE_RADIUS) {
                 player.addEffect(
                         new MobEffectInstance(MobEffects.BLINDNESS, DURATION, 0, false, true));
+                player.addEffect(
+                        new MobEffectInstance(MobEffects.DARKNESS, DURATION, 0, false, true));
+                PacketDistributor.sendToPlayer(player, payload);
             }
         }
     }

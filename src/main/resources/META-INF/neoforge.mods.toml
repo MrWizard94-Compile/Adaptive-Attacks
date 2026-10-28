@@ -18,14 +18,14 @@ license="MIT"
 [[dependencies.adaptiveattacks]]
     modId="adaptiveboss"
     type="required"
-    versionRange="[1.0,)"
+    versionRange="[1.1,)"
     ordering="AFTER"
     side="BOTH"
 
 [[dependencies.adaptiveattacks]]
     modId="neoforge"
     type="required"
-    versionRange="[21.1,)"
+    versionRange="[21.1.248,)"
     ordering="NONE"
     side="BOTH"
 

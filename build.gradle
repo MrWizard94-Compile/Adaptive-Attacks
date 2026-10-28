@@ -40,10 +40,10 @@ runs {
 dependencies {
     implementation "net.neoforged:neoforge:${neoforge_version}"
     compileOnly 'org.jetbrains:annotations:24.1.0'
-    compileOnly files('../Adaptive Bosses/build/libs/adaptiveboss-1.0.0.jar')
+    compileOnly files('../Adaptive Bosses/build/libs/adaptiveboss-1.1.2.jar')
     gameTestImplementation "net.neoforged:neoforge:${neoforge_version}"
     gameTestCompileOnly    'org.jetbrains:annotations:24.1.0'
-    gameTestImplementation files('../Adaptive Bosses/build/libs/adaptiveboss-1.0.0.jar')
+    gameTestImplementation files('../Adaptive Bosses/build/libs/adaptiveboss-1.1.2.jar')
 }
 
 // ── Resource token substitution ─────────────────────────────────────────────
